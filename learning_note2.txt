@@ -1,0 +1,12 @@
+Algorithm
+Prim's algorithm
+Prim's algorithm is a greedy algorithm by picking shortest edge locally.
+1.Prim's algorithm starts from one vertex and puts it into a closed set.
+2.Add edges connected to this vertex to an open set which is maintained by a min heap.
+3.Pick the shortest edge in the min heap and add the other end to the closed set.
+4.repeat step 1,2,3 by starting from the other end which is newly added to the closed set in step 3.
+5.Finish until all vertices are in the closed set.
+
+Programming
+Learn to read data from in input file via ifstream.
+Write regular expressions to extract data from a file.

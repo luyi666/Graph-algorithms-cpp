@@ -1,0 +1,20 @@
+Algorithm
+Dijkstra's shortest path algorithm
+Dijkstra's algorithm is a greedy algorithm to find a shortest path from one vertex to another vertex.
+The algorithm picks a vertex with least cost from an open set which can be added to the closed set and we can claim
+that the picked vertex states the shortest path from source to itself.
+The algorithm ends once the destination vertex is added to the closed set or when the open set is empty.
+We use a data structure called min heap to efficiently get the least cost vertex in the open set.
+
+Programming
+use of c++ template
+I use a class template to represent node in the priority queue, aka heap. a node can be an integer, a string or something
+else. with c++ class template, it is possible to store generic type objects in the heap and use functions that can operate
+with generic type, which is good for code reuse.
+
+use of friend function
+a friend function can access private field of a class. It is convenient especially for print purpose.
+
+function overloading
+operator << is overloaded in the implementation for print purpose. It is used as a friend function of a given class.
+The code is more readable by function overloading.
